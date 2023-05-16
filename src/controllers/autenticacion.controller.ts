@@ -73,7 +73,7 @@ export class AutenticacionController {
     @repository(UserRepository) protected userRepository: UserRepository,
   ) { }
 
-  @post('/users/login', {
+  @post('/login', {
     responses: {
       '200': {
         description: 'Token',
